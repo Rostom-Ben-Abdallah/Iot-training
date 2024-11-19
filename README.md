@@ -1,5 +1,3 @@
-Here’s the updated README with the additional detail about using `localhost` or your broker's IP address from the `ipconfig` command:
-
 ---
 
 # IoT Training Session  
