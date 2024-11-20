@@ -118,4 +118,3 @@ In the second terminal, run the following command to publish a message:
 
 ---
 
-This updated README now provides clear instructions for using either `localhost` or the system's IP address, ensuring students have all the details needed for successful testing. Let me know if you'd like further refinements! 😊
