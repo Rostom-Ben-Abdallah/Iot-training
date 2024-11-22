@@ -14,7 +14,7 @@ const char* temperatureTopic = "home/room/temperature";
 const char* lampTopic = "home/room/lamp";
 
 // DHT11 configuration
-#define DHTPIN 4   // GPIO pin connected to the DHT11 sensor
+#define DHTPIN 23  // GPIO pin connected to the DHT11 sensor
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
