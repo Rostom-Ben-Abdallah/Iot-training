@@ -1,6 +1,6 @@
 ---
 
-# IoT Training Session  
+# IoT Training Session  2
 Welcome to the **IoT Training Session**! In this guide, you will learn how to set up and test **Mosquitto MQTT Broker** on a Windows machine.
 
 ---
