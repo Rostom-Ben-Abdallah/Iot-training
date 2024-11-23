@@ -10,7 +10,7 @@ Follow these quick steps to get your ESP32 ready for action:
 2. Go to **File > Preferences**.  
 3. In the **Additional Board Manager URLs** field, paste this link:  
    ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+   https://dl.espressif.com/dl/package_esp32_index.json
    ```
 4. Click **OK**.
 
