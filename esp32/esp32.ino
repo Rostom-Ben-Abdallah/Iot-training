@@ -11,10 +11,11 @@ const char* mqttBroker = "192.168.x.x";  // Replace with your MQTT broker's IP a
 
 // MQTT topics
 const char* temperatureTopic = "home/room/temperature";
+const char* humidityTopic = "home/room/humidity";
 const char* lampTopic = "home/room/lamp";
 
 // DHT11 configuration
-#define DHTPIN 23  // GPIO pin connected to the DHT11 sensor
+#define DHTPIN 23   // GPIO pin connected to the DHT11 sensor
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -86,10 +87,17 @@ void loop() {
   client.loop();
 
   float temperature = dht.readTemperature();
-  if (!isnan(temperature)) {
-    String tempPayload = String(temperature, 2);  // Format temperature
-    client.publish(temperatureTopic, tempPayload.c_str()); // Publish temperature
-    Serial.println("Temperature: " + tempPayload);
+  float humidity =dht.readHumidity();
+  if (!isnan(temperature) && !isnan(humidity)) {
+    String tempPayload1 = String(temperature, 2); // Format temperature
+    String tempPayload2 = String(humidity, 2); // Format humidity
+
+    client.publish(temperatureTopic, tempPayload1.c_str()); // Publish temperature
+    Serial.println("Temperature: " + tempPayload1);
+
+    client.publish(humidityTopic, tempPayload2.c_str()); // Publish temperature
+    Serial.println("humidity: " + tempPayload2);
+
   }
 
   delay(2000);  // Wait 2 seconds
