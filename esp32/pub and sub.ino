@@ -15,12 +15,12 @@ const char* humidityTopic = "home/room/humidity";
 const char* lampTopic = "home/room/lamp";
 
 // DHT11 configuration
-#define DHTPIN 23   // GPIO pin connected to the DHT11 sensor
+#define DHTPIN X   // GPIO pin connected to the DHT11 sensor
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
 // LED pin
-const int ledPin = 2; // GPIO2 (D4 on some ESP boards)
+const int ledPin = X; // GPIO2 (D4 on some ESP boards)
 
 // MQTT client setup
 WiFiClient espClient;
