@@ -130,5 +130,3 @@ In a second terminal window, publish a message to the same topic:
    ```
 
 ---
-
-This guide provides step-by-step instructions for installing and configuring Mosquitto MQTT Broker on **Ubuntu**, ensuring a successful setup for IoT applications. Let me know if you need further clarification!
