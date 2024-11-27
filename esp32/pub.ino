@@ -35,7 +35,7 @@ void connectMQTT() {
     Serial.print("Connecting to MQTT broker...");
     if (client.connect("ESP32Client")) {  // Client ID
       Serial.println("Connected!");
-      client.subscribe(lampTopic);  // Subscribe to the lamp topic
+      client.subscribe(lampTopic,1);  // Subscribe to the lamp topic
     } else {
       Serial.println("Failed. Retrying...");
       delay(5000);
