@@ -82,10 +82,10 @@ void sendSensorData() {
     String tempPayload1 = String(temperature, 2); // Format temperature
     String tempPayload2 = String(humidity, 2);    // Format humidity
 
-    client.publish(temperatureTopic, tempPayload1.c_str(), true); // QoS 1 with retained
+    client.publish(temperatureTopic, tempPayload1.c_str(), true); // QoS 0 with retained
     Serial.println("Temperature: " + tempPayload1);
 
-    client.publish(humidityTopic, tempPayload2.c_str(), true); // QoS 1 with retained
+    client.publish(humidityTopic, tempPayload2.c_str(), true); // QoS 0 with retained
     Serial.println("Humidity: " + tempPayload2);
   } else {
     Serial.println("Failed to read from DHT sensor.");
