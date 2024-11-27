@@ -12,7 +12,7 @@ const char* mqttBroker = "X.X.X.X";  // Replace with your MQTT broker's IP addre
 const char* lampTopic = "home/room/lamp";
 
 // LED pin
-const int ledPin = 2; // GPIO13
+const int ledPin = X; // GPIO13
 
 // MQTT client setup
 WiFiClient espClient;
