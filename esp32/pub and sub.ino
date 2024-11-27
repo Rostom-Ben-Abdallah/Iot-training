@@ -7,7 +7,7 @@ const char* ssid = "YourWiFiSSID";  // Replace with your WiFi SSID
 const char* password = "YourWiFiPassword";  // Replace with your WiFi password
 
 // MQTT Broker IP
-const char* mqttBroker = "192.168.X.X";  // Replace with your MQTT broker's IP address
+const char* mqttBroker = "X.X.X.X";  // Replace with your MQTT broker's IP address
 
 // MQTT topics
 const char* temperatureTopic = "home/room/temperature";
