@@ -61,7 +61,7 @@ This guide provides step-by-step instructions for students to install and run No
    ```
 
 2. **Access the Editor**:
-   Once Node-RED starts, it will provide a URL in the terminal (usually `http://"you ip adress":1880`). Open this URL in your browser to access the Node-RED editor.
+   Once Node-RED starts, it will provide a URL in the terminal (usually `http://"your ip adress":1880`). Open this URL in your browser to access the Node-RED editor.
 
 ---
 
