@@ -65,23 +65,4 @@ This guide provides step-by-step instructions for students to install and run No
 
 ---
 
-## Optional: Autostart Node-RED on Boot
-If you want Node-RED to start automatically on system boot:
-
-1. Install the Node-RED service package:
-   ```bash
-   sudo npm install -g pm2
-   ```
-
-2. Set up Node-RED with PM2:
-   ```bash
-   pm2 start `which node-red` -- -v
-   pm2 save
-   pm2 startup
-   ```
-
-   Follow the instructions printed by `pm2 startup` to complete the setup.
-
----
-
 **Note**: For troubleshooting and additional help, refer to the official [Node-RED Documentation](https://nodered.org/docs/getting-started/).
